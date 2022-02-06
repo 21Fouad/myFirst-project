@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.load {
+  background-color: orange;
+  z-index: 999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 88888;
+  display: none;
+  color: red;
+}
+.content h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.content p {
+  font-size: 20px;
+  color: #999;
+  margin-top: 20px;
+}
+.content1 p {
+  color: #444;
+}
+/* section of nav */
+.navbar {
+  z-index: 8888;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f25454;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f25454;
+}
+.icons {
+  color: white;
+}
+.icons:hover {
+  color: #f25454;
+}
+.caption h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+.sidenav {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 300px;
+  background-color: transparent;
+}
+.sidenav .icons {
+  color: black;
+}
+/* section of about */
+.before::before {
+  content: "A";
+  position: absolute;
+  font-size: 4em;
+  opacity: 0.3;
+  top: -0.4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: gray;
+}
+.after::after {
+  content: "";
+  width: 41px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+}
+.progres h6 {
+  color: #444;
+}
+
+/* section of team */
+.before1::before {
+  content: "T";
+  position: absolute;
+  font-size: 4em;
+  opacity: 0.3;
+  top: -0.4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: gray;
+  text-transform: uppercase;
+}
+.over-layer {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.over-layer:hover {
+  background-color: #f254548f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-duration: 2s;
+  transform: translateY(30);
+}
+.content1 h4:hover {
+  color: #f25454;
+  transition-duration: 2s;
+}
+.icons-overlay {
+  color: white;
+  padding: 10px;
+}
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  display: none;
+}
+/* part of section of contact */
+.button {
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgba(255, 99, 71, 0.76);
+  transition-duration: 2s;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+/* section of services */
+.services {
+  background-color: #fafafa;
+}
+.before2::before {
+  content: "S";
+  position: absolute;
+  font-size: 4em;
+  opacity: 0.3;
+  top: -0.4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: gray;
+  text-transform: uppercase;
+}
+.first i {
+  color: #f25454;
+}
+.first h3:hover {
+  color: #f25454;
+  transition-duration: 2s;
+}
+.first p {
+  color: #444;
+  font-size: 17px;
+}
+/* section of carsoul */
+.carsoul p {
+  color: #999;
+}
+
+/* section of contact  */
+.contacts {
+  background-color: #fafafa;
+}
+.before3::before {
+  content: "C";
+  position: absolute;
+  font-size: 4em;
+  opacity: 0.3;
+  top: -0.4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: gray;
+  text-transform: uppercase;
+}
+.iconsoverlay {
+  color: #f25454;
+}
+.content1 a {
+  text-decoration: none;
+  color: black;
+}
+.content1 a:hover {
+  color: #f25454;
+}
+.button {
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgba(255, 99, 71, 0.76);
+  transition-duration: 2s;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+input,
+textarea {
+  color: #a6a6a6;
+  border-radius: 3px;
+  border: 2px solid #eee;
+  background-color: #fff;
+}
+input:hover,
+textarea:hover {
+  color: #a6a6a6;
+  border-radius: 3px;
+  border: 2px solid #f25454;
+  background-color: #fff;
+}
+/* section of footer */
+.footer {
+  background-image: url(./Images/dotted-map.png);
+  background-size: cover;
+  background-color: black;
+}
+.footer h2 {
+  color: white;
+}
+.footer p {
+  color: #999;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #999;
+}
+.footer ul li a:hover {
+  list-style: none;
+  text-decoration: none;
+  color: #f25454;
+  transition-duration: 1s;
+}
+.footer button {
+  border: 2px solid #999;
+  padding: 5px;
+  background-color: transparent;
+}
+.footer button a {
+  text-decoration: none;
+  color: #999;
+}
+.footer button:hover {
+  color: #f25454;
+  border-color: #f25454;
+}
+.footer a {
+  text-decoration: none;
+  color: #999;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #f25454;
+}
+.end-footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.end-footer a:hover {
+  text-decoration: none;
+  color: #f25454;
+  font-weight: bolder;
+}
